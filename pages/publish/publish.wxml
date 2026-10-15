@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="intro"><view class="title">记录这一刻 ✨</view><view class="muted">照片会褪色，故事不会。</view></view>
+  <view class="card form">
+    <view class="upload" bindtap="chooseMedia">
+      <text class="plus">＋</text><text>添加照片或视频</text><text class="hint">最多 9 个</text>
+    </view>
+    <view class="preview" wx:if="{{media.length}}"><text>已选择 {{media.length}} 个文件</text></view>
+    <textarea class="textarea" maxlength="300" placeholder="写下今天发生的小故事……" bindinput="onText"></textarea>
+    <view class="row"><text>📅 日期</text><text>{{date}}  ›</text></view>
+    <view class="row"><text>🗂️ 相册</text><text>{{album}}  ›</text></view>
+    <view class="row"><text>📍 地点</text><text class="muted">添加地点  ›</text></view>
+  </view>
+  <button class="primary-btn publish" bindtap="publish">保存这份回忆</button>
+  <view class="tip">当前为前端演示版，下一阶段接入云存储后会真正保存照片和视频。</view>
+</view>
