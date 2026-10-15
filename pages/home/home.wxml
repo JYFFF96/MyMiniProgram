@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="hero card">
+    <view>
+      <text class="eyebrow">OUR LITTLE STORY</text>
+      <view class="hello">{{child.name}}的成长记忆</view>
+      <view class="days">来到世界的第 <text>{{child.days}}</text> 天 · {{child.ageText}}</view>
+    </view>
+    <view class="avatar">👶</view>
+  </view>
+
+  <view class="timeline-title">
+    <text class="section-title">成长时间轴</text>
+    <text class="muted">把普通的日子也好好收藏</text>
+  </view>
+
+  <block wx:for="{{moments}}" wx:key="id">
+    <view class="moment">
+      <view class="date-col">
+        <text class="date">{{item.date}}</text>
+        <text class="year">{{item.year}}</text>
+        <view class="dot"></view>
+        <view class="line"></view>
+      </view>
+      <view class="moment-card card">
+        <view class="photo {{item.layout}}">
+          <text>{{item.emoji}}</text>
+          <view class="photo-label">照片 / 视频预览</view>
+        </view>
+        <view class="moment-body">
+          <view class="tag">{{item.tag}}</view>
+          <view class="moment-title">{{item.title}}</view>
+          <view class="moment-text">{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
