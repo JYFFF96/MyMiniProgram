@@ -1,0 +1,4 @@
+{
+  "desc": "宝宝成长纪念册",
+  "rules": [{ "action": "allow", "page": "*" }]
+}
