@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="top">
+    <view><view class="title">我们的相册</view><view class="muted">按主题收藏每一段小故事</view></view>
+    <view class="add">＋</view>
+  </view>
+  <view class="album-grid">
+    <block wx:for="{{albums}}" wx:key="id">
+      <view class="album card">
+        <view class="cover {{item.color}}"><text>{{item.icon}}</text><view class="stack"></view></view>
+        <view class="album-info">
+          <text class="album-name">{{item.name}}</text>
+          <text class="count">{{item.count}} 个回忆</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
