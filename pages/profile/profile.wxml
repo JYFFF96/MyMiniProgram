@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="profile">
+    <view class="avatar">😊</view>
+    <view><view class="name">爸爸 / 妈妈</view><view class="muted">小宝的成长记录者</view></view>
+  </view>
+  <view class="memory card"><view><text class="number">401</text><text class="unit">份回忆</text></view><view class="line"></view><view><text class="number">2年4个月</text><text class="unit">陪伴时光</text></view></view>
+  <view class="card menu">
+    <block wx:for="{{menu}}" wx:key="title">
+      <view class="menu-row"><view class="menu-icon">{{item.icon}}</view><view class="menu-main"><text>{{item.title}}</text><text>{{item.desc}}</text></view><text class="arrow">›</text></view>
+    </block>
+  </view>
+  <view class="footer">愿所有被记录的瞬间，都成为长大后的礼物。</view>
+</view>
