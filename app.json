@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/albums/albums",
+    "pages/publish/publish",
+    "pages/baby/baby",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "成长记忆",
+    "navigationBarBackgroundColor": "#FFF9F2",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFF9F2",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#9B9188",
+    "selectedColor": "#E99B72",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "时间轴" },
+      { "pagePath": "pages/albums/albums", "text": "相册" },
+      { "pagePath": "pages/publish/publish", "text": "记录" },
+      { "pagePath": "pages/baby/baby", "text": "宝宝" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
